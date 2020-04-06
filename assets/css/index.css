@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  background-color: #f2dc57;
+}
+
+main {
+  width: 80vw;
+  height: 80vh;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr;
+  grid-template-areas: "whiteSite yellowSite";
+  box-shadow: 5px 5px 80px black;
+  border-radius: 2vw;
+}
+
+.whiteSite {
+  grid-area: whiteSite;
+  background-color: white;
+  border-radius: 2vw 0 0 2vw;
+  display: grid;
+}
+h1 {
+  margin-bottom: 0vh;
+  height: 2vh;
+  font-size: 3.5vw;
+  text-align: center;
+}
+
+.yellowSeite {
+  grid-area: yellowSite;
+  background-color: rgb(255, 230, 0);
+  border-radius: 0 2vw 2vw 0;
+}
+img {
+  position: absolute;
+  margin-left: 10vw;
+  height: 81vh;
+  width: 30vw;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input {
+  margin-left: 10vw;
+  margin-bottom: 2vh;
+  border: 0.5px solid black;
+  height: 4vh;
+  width: 50%;
+  border-radius: 10px;
+  color: #f2dc57;
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding-left: 20px;
+}
+input:focus {
+  border: 0.5px solid gainsboro;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #f2dc57;
+  color: #f2dc57;
+
+  font-weight: bolder;
+}
+
+input::-webkit-input-placeholder {
+  color: #58553e;
+  font-size: 0.6em;
+  font-weight: bolder;
+  text-align: left;
+  opacity: 0.4;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  top: -4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 0.5px solid silver;
+}
+input[type="radio"]:checked::after {
+  content: "•";
+  font-size: 1.8em;
+  position: absolute;
+  left: 2.5px;
+  top: -15.5px;
+  color: #d19f04;
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  top: -3.2vh;
+  background-color: #d19f04;
+  border: none;
+  margin-right: 2px;
+  margin-left: 10.2vw;
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+}
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  position: absolute;
+  font-size: 0.7em;
+  right: 6px;
+}
+
+.policy {
+  position: relative;
+  bottom: 6vh;
+  left: 0.3vw;
+  color: rgb(194, 189, 189);
+}
+
+.gender1 {
+  margin-top: 2vh;
+  color: rgb(194, 189, 189);
+  display: flex;
+  justify-content: center;
+}
+
+input[value="SIGN UP"] {
+  position: absolute;
+  left: 24vw;
+  bottom: 15vh;
+  background-color: #d19f04;
+  border: none;
+  width: 6vw;
+  height: 5vh;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  padding: 1px;
+}
+
+input[value="SIGN IN"] {
+  position: absolute;
+  bottom: 15vh;
+  left: 10vw;
+  border: 2px solid #d19f04;
+  background: none;
+  width: 6vw;
+  height: 5vh;
+  color: gainsboro;
+  font-size: 1em;
+  text-align: center;
+  padding: 1px;
+}
+
+footer {
+  position: absolute;
+  bottom: 9vh;
+  left: 14vw;
+}

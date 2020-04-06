@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wanderer</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <main>
+      <section class="whiteSite">
+        <h1>WELCOME WANDER!</h1>
+        <form action="wander" id="wander">
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            required
+            placeholder="First Name"
+          />
+
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            required
+            placeholder="Last Name"
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="on"
+            pattern=".+@gmail.com"
+            size="30"
+            placeholder="E-mail@gmail,hotmail,..."
+          />
+
+          <input
+            type="password"
+            id="pwd"
+            name="pwd"
+            minlength="8"
+            placeholder="Password"
+          />
+
+          <input list="country" name="country" placeholder="your Country" />
+          <datalist id="country">
+            <option value="Deutschland"> </option>
+            <option value="Türkei"> </option>
+            <option value="Syrien"> </option>
+            <option value="Polen"> </option>
+            <option value="Südafrika"> </option>
+          </datalist>
+
+          <div class="gender1">
+            <label for="gender"> Female</label>
+            <input type="radio" id="female" name="gender" value="female" />
+
+            <label for="gender"> Male</label>
+            <input type="radio" id="male" name="gender" value="male" />
+          </div>
+
+          <input type="checkbox" name="vehicle1" value="Bike" />
+          <label for="policy" class="policy">
+            I agree to the privacy policy</label
+          >
+
+          <input type="submit" value="SIGN UP" />
+          <input type="submit" value="SIGN IN" />
+
+          <footer>
+            <h3>Do not worry, we proudly declare that *all rights reserved*</h3>
+          </footer>
+        </form>
+      </section>
+
+      <section class="yellowSite">
+        <img src="./assets/img/hund.png" alt="" />
+      </section>
+    </main>
+  </body>
+</html>
